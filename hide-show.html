@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+    <style>
+        #two{
+            display: none;
+        }
+    </style>
+<body>
+    <h1 id="one">Welcome in my page</h1>
+    <button id="btn1">this can hide data</button>
+    <br><br>
+    <h1 id="two">Welcome in my page</h1>
+    <button id="btn2">this can show data</button>
+    <br><br>
+    <h1 id="three">Welcome in my page</h1>
+    <button id="btn3">this can show/hide data</button>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        // $('#btn1').click(function(){
+        //     $('#one').hide(1000)
+        // })
+        // $('#btn2').click(function(){
+        //     $('#two').show(1000)
+        // })
+        $('#btn3').click(function(){
+            $('#three').toggle(1000)
+        })
+    })
+</script>

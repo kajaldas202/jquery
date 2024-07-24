@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <button>click here!</button>
+    <input type="enter name" placeholder="enter this">
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        $('button').click(function(){
+            alert("you have received a message");
+        })
+        // $('input').focus(function(){
+        //     $(this).css('background','green');
+        // })
+        $('input').blur(function(){
+            $(this).css('background','pink');
+            alert("this is clicked");
+        })
+    })
+</script>

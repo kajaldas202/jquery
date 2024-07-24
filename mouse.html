@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <p id="one">hello paragraph</p>
+    <div id="two">byee.</div>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        $('#two').mouseenter(function(){
+            alert("you have enter the moused");
+        })
+        // $('#two').mouseleave(function(){
+        //     alert("you have leave the moused");
+        //     })
+        // $('#one').mousedown(function(){
+        //     alert("you have down the moused");
+        // })
+        // $('#two').mouseup(function(){
+        //     alert("you have up the moused");
+        // })
+        // $('#two').hover(function(){
+        //     alert("you have hover the moused");
+        // })
+        // $('#two').mousemove(function(){
+        //     alert("you have move the moused");
+        // })
+    })
+</script>

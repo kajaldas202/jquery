@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+    <style>
+        .intro{
+            height: 60px;
+            width: 80px;
+            border: 1px solid red;
+        }
+    </style>
+<body>
+    <!-- <div>this is one</div>
+    <button class="add">Add css</button> -->
+    <!-- <br><br>
+    <p>this is two</p>
+    <button class="remove">remove css</button> -->
+    <br><br>
+    <p>this one is work on both side as add and remove</p>
+    <button class="to remove">work on both sides add and remove</button>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        // $('.add').click(function(){
+        //     $('div').addClass('intro');
+        // })
+        // $('.remove').click(function(){
+        //     $('p').removeClass('intro');
+        // })
+        $('.to remove').click(function(){
+            $('p').toggleClass('intro');
+        })
+        
+    })
+</script>
